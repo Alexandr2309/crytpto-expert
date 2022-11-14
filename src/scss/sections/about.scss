@@ -1,0 +1,99 @@
+.about {
+}
+
+.title {
+}
+
+.about__title {
+  margin-bottom: 75px;
+}
+
+.about__facts {
+}
+
+.facts {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  margin-bottom: 100px;
+}
+
+.facts__item {
+  text-align: center;
+  max-width: 20%;
+}
+
+.facts__number {
+  font: var(--font-xxl);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.facts__text {
+  width: 100%;
+  display: block;
+  font: var(--font-m);
+  font-weight: 400;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  overflow-wrap: break-word;
+  background: var(--light-blue);
+}
+
+/*ABOUT TEAM BLOCK*/
+
+.about__team {
+}
+
+.title {
+}
+
+.team {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.team__employee {
+  flex: 1 1 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.employee__avatar {
+  display: flex;
+}
+
+.employee_img {
+  max-width: 100%;
+  flex: 1 1 100%;
+  object-fit: cover;
+}
+
+.employee__info {
+  background: rgba(0, 72, 151, 0.25);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.employee__name {
+  font: var(--font-size-m);
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+.employee__post {
+  font: var(--font-s);
+  letter-spacing: 0.005em;
+  overflow-wrap: break-word;
+  max-width: 95%;
+
+}
+
+.employee__company {
+  text-transform: uppercase;
+  white-space: nowrap;
+}

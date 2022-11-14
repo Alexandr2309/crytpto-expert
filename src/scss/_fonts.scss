@@ -1,0 +1,11 @@
+@mixin font($font_name, $file_path, $weight, $format) {
+  @font-face {
+    font-family: $font_name;
+    src: url("#{$file_path}") format("#{$format}");
+    font-weight: #{$weight};
+  }
+}
+
+@include font("PTSans", "PTSans-Bold.ttf", "700", 'truetype');
+@include font("PTSans", "PTSans-Regular.ttf", "400", 'truetype');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');

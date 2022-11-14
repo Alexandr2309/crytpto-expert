@@ -1,0 +1,36 @@
+:root {
+  /*ЦВЕТА*/
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --light-blue: rgba(8, 150, 173, 0.25);
+  --text-blue: #18B3CC;
+  --bg-secondary: #575757;
+
+  /*ШРИФТЫ */
+  --font-family-main: "Source Sans Pro";
+
+  --font-size-s: 15px;
+  --line-height-s: 140%;
+  --font-s: var(--font-size-s) / var(--line-height-s) var(--font-family-main);
+
+  --font-size-m: 16px;
+  --line-height-m: 20px;
+  --font-m: var(--font-size-m) / var(--line-height-m) var(--font-family-main);
+
+  --font-size-l: 20px;
+  --line-height-l:25px;
+  --font-l: var(--font-size-l) / var(--line-height-l) var(--font-family-main);
+
+  --font-size-xl: 25px;
+  --line-height-xl: 31px;
+  --font-xl: var(--font-size-xl) / var(--line-height-xl) var(--font-family-main);
+
+  --font-size-xxl: 45px;
+  --line-height-xxl: 140%;
+  --font-xxl: var(--font-size-xxl) / var(--line-height-xxl) var(--font-family-main);
+
+  /*РАЗМЕРЫ*/
+  --container-w-xl: 1105px;
+  --container-w-l: 998px;
+  --container-w-m: 660px;
+}

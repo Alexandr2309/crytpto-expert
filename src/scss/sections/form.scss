@@ -1,0 +1,159 @@
+.call__wrapper {
+  display: flex;
+  column-gap: 75px;
+}
+
+.call__title {
+  margin-bottom: 15px;
+}
+
+.call__content {
+  flex: 1 1 50%;
+}
+
+.input {
+  border-bottom: 1px solid #7E7E7E;
+  padding: 23px 0 8px;
+}
+
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.order__name {
+  flex: 1 1 auto;
+}
+
+
+.order__email {
+  flex: 1 1 auto;
+
+}
+
+.order__phone {
+  width: 100%;
+}
+
+.order__comment {
+  width: 100%;
+}
+
+.order__policy {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+  column-gap: 15px;
+}
+
+.tooltip {
+  position: absolute;
+  min-width: 30px;
+  min-height: 30px;
+  background: #c84242;
+  z-index: 99;
+  font: var(--font-s);
+  border-radius: 10px;
+  color: var(--secondary-color);
+  font: var(--font-s);
+  font-weight: 600;
+  padding: 5px 10px;
+  //transform: translate3d(0, calc(-100% - 15px), 0);
+}
+
+.tooltip::before {
+  content: '';
+  border: 8px solid transparent;
+  border-top-color: #c84242;
+  position: absolute;
+  top: 100%;
+  left: 8px;
+  z-index: -1;
+}
+
+.order__checkbox {
+  display: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.order__checkbox + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+.order__checkbox + label:hover {
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(87, 87, 87, 0.2);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 8px 2px rgba(87, 87, 87, 0.2);
+}
+
+
+.order__checkbox:checked + label:before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-40%, -54%, 0);
+}
+
+.order__info {
+  font: var(--font-s);
+}
+
+.order__btn {
+  margin-left: auto;
+  margin-top: 10px;
+  padding: 10px 22px;
+  border: 1px solid #000;
+  font: var(--font-s);
+  transition: 0.3s ease;
+}
+
+.order__btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--secondary-color);
+}
+
+.order__btn:disabled {
+  opacity: 0.3;
+}
+
+.call__img {
+  flex: 1 1 50%;
+}
+
+.call__img-item {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.error {
+  border-color: indianred;
+  border-width: 3px;
+}
+
+.success {
+  text-align: center;
+  //padding: 10px;
+}
+
+.success__title {
+  font: var(--font-xl);
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.success__picture {
+  //text-align: center;
+}
+
+.success__img {
+  max-width: 100%;
+  height: auto;
+}

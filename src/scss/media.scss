@@ -1,0 +1,153 @@
+@media (min-width: 0px) {
+  .container {
+    margin: 0px auto;
+    padding: 0 20px;
+  }
+  .header__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .call__img {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    z-index: 11;
+  }
+
+  .header__burger > svg {
+    cursor: pointer;
+  }
+
+  .header__burger--white > svg > line {
+    stroke: #fff;
+  }
+
+  .header__nav {
+    position: absolute;
+    transition: .3s ease-out;
+    will-change: transform;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+    transform: translate3d(250%, 0, 0);
+    background: var(--bg-secondary);
+    height: 100vh;
+
+    &--show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .header__list {
+    flex-direction: column;
+    margin-top: var(--header-height);
+  }
+  .header__link {
+    font: var(--font-xl);
+    color: var(--secondary-color)
+  }
+  .benefits-list__item {
+    width: calc((100% - 60px) / 2);
+    margin: 0;
+  }
+
+  /*О НАС*/
+
+  .team {
+    flex-wrap: wrap;
+  }
+  .employee {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  .facts {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .facts__text {
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .facts__item {
+    max-width: unset;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .benefits-list__title {
+    font: var(--font-m);
+    font-weight: 600;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .benefits-list__item {
+    flex: 1 1 100%;
+  }
+  .anchor {
+    margin-right: 40px;
+  }
+  .footer__logo {
+    margin-right: 40px;
+  }
+
+  .employee {
+    flex-basis: calc((100% - 30px));
+  }
+
+  .service {
+    width: calc((100% - 30px));
+  }
+
+  .service__title {
+    font: var(--font-m);
+    font-weight: 600;
+  }
+  .order__name,
+  .order__email {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 320px) {
+  .container {
+    max-width: calc(var(--container-w-m) - 40px);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: calc(var(--container-w-l) - 40px);
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .benefits-list__item:nth-child(3n-1) {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: calc(var(--container-w-xl) - 40px);
+  }
+
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: calc(1440px - 40px);
+  }
+}

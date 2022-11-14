@@ -1,0 +1,113 @@
+
+.services {
+}
+
+.title {
+}
+
+.services__title {
+  margin-bottom: 70px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 65px;
+}
+
+.services-list__item {
+}
+
+.service {
+  width: calc((100% - 30px) / 2);
+}
+
+.service__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service__icon {
+}
+
+.service__img {
+}
+
+.service__title {
+  font: var(--font-l);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: 20px;
+}
+
+.service__content {
+}
+
+.service_plan {
+
+}
+
+.service__point {
+  font: var(--font-s);
+  font-weight: 400;
+  padding-left: 28px;
+  position: relative;
+}
+
+.service__point:before {
+  content: '1';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate3d(0, -50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+}
+.service__point:nth-child(2):before {
+  content: '2';
+}
+.service__point:nth-child(3):before {
+  content: '3';
+}
+.service__point:nth-child(4):before {
+  content: '4';
+}
+
+
+.service__point:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.service__about {
+  font: var(--font-s);
+  font-weight: 400;
+}
+
+.service__bottom {
+  margin-top: 17px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.service__price {
+  margin-right: 23px;
+  font: var(--font-s);
+  font-weight: 600;
+  color: var(--text-blue);
+}
+
+.service__call {
+}
