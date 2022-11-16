@@ -1,5 +1,5 @@
-import autoRun from './order.js';
-import auto, {modalContentHTML} from './modal.js';
+import autoRun from "./order.js";
+import auto, { modalContentHTML } from "./modal.js";
 
 const footerAnchor = document.querySelector(".anchor");
 
@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
     `<div class="loader__wrapper">
 <div class="lds-roller">
     <div></div>
-    <div></div> 
+    <div></div>
     <div></div>
     <div></div>
     <div></div>
@@ -20,34 +20,36 @@ window.addEventListener("DOMContentLoaded", (e) => {
 </div>
 `
   );
-  window.loaderElement = document.querySelector('.loader__wrapper');
+  window.loaderElement = document.querySelector(".loader__wrapper");
 });
 
 footerAnchor.onclick = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function activeLinkSet(pathname) {
-  [...document.querySelectorAll('.nav__link')].forEach(
-    link => link.classList.remove('nav__link--active')
+  [...document.querySelectorAll(".nav__link")].forEach(
+    link => link.classList.remove("nav__link--active")
   );
-
+  
   let name;
-  if(pathname.includes('index.html')) name = 'main';
-  else if(pathname.includes('Form.html')) name = 'form';
-  else if(pathname.includes('Services.html')) name = 'services';
-  else if(pathname.includes('About.html')) name = 'about';
-
+  
+  if (/\/(?!\w+)|crypto-expert/gi.test(pathname)) name = "main";
+  else if (pathname.includes("Form.html")) name = "form";
+  else if (pathname.includes("Services.html")) name = "services";
+  else if (pathname.includes("About.html")) name = "about";
+  
   document.querySelector(`[data-name="${name}"]`)
-    .classList.add('nav__link--active');
+    .classList.add("nav__link--active");
 }
 
 activeLinkSet(window.location.pathname);
 
 const header = document.querySelector("header");
+console.log(header);
 document.documentElement.style.setProperty(
   "--header-height",
   `${header.clientHeight}px`

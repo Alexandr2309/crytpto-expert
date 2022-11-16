@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
-    "zip": "gulp deployZip --build"
+    "zip": "gulp deployZip --build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": ""
   },
   "repository": {
     "type": "git",
@@ -15,10 +17,7 @@
   },
   "author": "Alexandr Kolomytski",
   "license": "ISC",
-  "bugs": {
-    "url": "https://bitbucket.org/alexandr2309/demo/issues"
-  },
-  "homepage": "https://bitbucket.org/alexandr2309/demo#readme",
+  "homepage": "https://alexandr2309.github.io/crytpto-expert",
   "devDependencies": {
     "browser-sync": "latest",
     "del": "^6.0.0",
@@ -46,6 +45,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "scss-reset": "^1.2.2"
   }
 }
